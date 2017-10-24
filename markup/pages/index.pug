@@ -1,0 +1,18 @@
+extends _template
+
+block body
+    header.page-header
+        .container
+            img(src="static/img/general/header.png", alt="header")
+    section.main
+        +b.background-media
+            +e.VIDEO.video(autoplay, loop, src="video-bg.mp4")
+            +e.IMG.image(src="static/img/general/main-bg.jpg")
+        .container
+            .main-content
+                h1 Мигрень не позволяет видеть особенные моменты жизни
+                +b.BUTTON.button
+                    +e.SPAN.icon
+                        img(src="static/img/general/power.png", alt="power")
+                    | Выключить мигрень
+
